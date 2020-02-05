@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+}
+.navbar{
+    background-color: rgba(82,64,120,0.9) !important;
+    position: fixed;
+    width: 100%;
+}
+.navbar ul li a {
+    color: white !important; 
+}
+.navbar ul li a:hover{
+    color: orange !important;
+}
+.weather{
+    position: relative;
+}
+.btn-read{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid black;
+    line-height: 60px;
+    background-color:rgba(82,64,120,0.9) ;
+    color: white;
+    opacity: 0;
+    transition: all 0.9s;
+}
+.btn-read:hover{
+    text-decoration: none;
+    color: white;
+    background: rgba(82,64,120,1);
+}
+.weather:hover .btn-read{
+    top: 96%;
+    opacity: 1;
+}
+/* carousel */
+.carousel-inner img{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+}
+.carousel-caption h3{
+    font-size: 400%;
+    text-shadow: 5px 5px 10px #fff;
+}
+.carousel-caption p{
+    font-weight: bold;
+    text-shadow: 3px 3px 5px black;
+}
+.fa-snowflake-o, .fa-cloud ,
+.fa-star-half-o{
+    color:  rgba(82,64,120,0.9);
+}
+/* front back */
+.team{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.the-card-wapper{
+    height: 520px;
+    width: 90%;
+    position: relative;
+}
+.the-card{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+.the-card:hover{
+    transform: rotateY(180deg);
+}
+.the-front{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.the-back{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    
+}
+@media (max-width:992px){
+    .weather{
+        position: relative;
+        height: 360px;
+    }
+    .btn-read{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        border-radius: 100px;
+        border: 1px solid black;
+        line-height: 60px;
+        background-color:rgba(82,64,120,0.9) ;
+        color: white;
+        opacity: 0;
+        transition: all 0.9s;
+    }
+    .btn-read:hover{
+        text-decoration: none;
+        color: white;
+        background: rgba(82,64,120,1);
+    }
+    .weather:hover .btn-read{
+        top: 80%;
+        opacity: 1;
+    }
+}
+@media (max-width:768px){
+    .weather{
+        position: relative;
+        height: 360px;
+    }
+    .btn-read{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        border-radius: 100px;
+        border: 1px solid black;
+        line-height: 60px;
+        background-color:rgba(82,64,120,0.9) ;
+        color: white;
+        opacity: 0;
+        transition: all 0.9s;
+    }
+    .btn-read:hover{
+        text-decoration: none;
+        color: white;
+        background: rgba(82,64,120,1);
+    }
+    .weather:hover .btn-read{
+        top: 70%;
+        opacity: 1;
+    }
+}
+@media (max-width:576px){
+    .carousel-inner img{
+        width: 100%;
+        height: 80vh;
+    }
+    .carousel-caption{
+            position: absolute;
+            top: 30%;
+        }
+    .carousel-caption h3{
+            font-size: 300%;
+            text-shadow: 5px 5px 10px #fff;
+        }
+    .carousel-caption p{
+            font-weight: bold;
+            text-shadow: 3px 3px 5px black;
+        }
+        .weather{
+            position: relative;
+            height: 360px;
+        }
+        .btn-read{
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            border-radius: 100px;
+            border: 1px solid black;
+            line-height: 60px;
+            background-color:rgba(82,64,120,0.9) ;
+            color: white;
+            opacity: 0;
+            transition: all 0.9s;
+        }
+        .btn-read:hover{
+            text-decoration: none;
+            color: white;
+            background: rgba(82,64,120,1);
+        }
+        .weather:hover .btn-read{
+            top: 70%;
+            opacity: 1;
+        }
+}

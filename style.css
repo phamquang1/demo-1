@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99;
+}
+.section{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+}
+.sub{
+    height: 50%;
+    background-color: grey;
+}
+.section-one{
+    /* background-image: url(https://ss-images.catscdn.vn/wm500/2019/08/27/5921750/untitled-design-1.jpg); 
+    */
+    background: rgb(186, 188, 174 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+    padding-top: 50px;
+}
+.section-two{
+    background-image: url(http://t.hdviet.com/backdrops/945x530/3a0cf6774d0aa9e2e4904c9f40a321e7.jpg);
+    position: relative;
+    padding-bottom: 30px;
+}
+.section-three{
+    background-image: url(https://image1.infogame.vn/2018/09/19/1-su-that-ve-trum-cuoi-trong-tham-tu-lung-danh-conan-1442496956781-0-0-325-636-crop-1442497058898.jpg);
+}
+.section-four{
+    background-image: url(http://game4v.com/g4v-content/uploads/2019/09/inuyasha-battle-of-naraku-8.jpg);
+}
+.section-five{
+    background-image: url(https://exp.gg/vn/wp-content/uploads/2018/06/inuyasha-wallpaper-1.jpg);
+}
+.section-six{
+    background-image: url(https://exp.gg/vn/wp-content/uploads/2018/06/e63664d5-0b95-4ef4-ab1b-a8e028d1747a.jpg);
+}
+.section-seven{
+    background-image: url(https://i.ytimg.com/vi/_O20nyS790U/maxresdefault.jpg);
+}
+.section-eight{
+    background-image: url(https://1.bp.blogspot.com/-8JnvbAnrmxQ/VwEgA7iNniI/AAAAAAAAAvg/w_rm4eAQBy8l9P77AZJfbXhrx0e_TgA7Q/s1600/Group-Picture-inuyasha-14166217-800-501.jpg);
+}
+.section-night{
+    background-image: url(https://image.thanhnien.vn/660/uploaded/khuongduy/2017_09_09/inuyasha-mobile-cmn-online-02_ajsg.jpg);
+}
+.section-ten{
+    background-image: url(https://s3.cloud.cmctelecom.vn/2game-vn/pictures/2game/2017/03/15/2game-InuYasha-mobile-anh-3s.jpg);
+}
+/* animate 1 */
+.sub-1{
+    position: relative;
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 90%);
+
+}
+.cup{
+    position: absolute;
+    width: 150px;
+    height: 180px;
+    left: 50%;
+    top: 25%;
+    border: 5px solid #262626;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(./img/kisspng-beach-sea-drawing-illustration-blue-sea-underwater-bubble-5a858f11f04983.1868838115187023539842.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    box-shadow: 0 0 0 6px #fff, 0 20px 35px rgba(0,0,0,1);
+    animation: animate 10s linear infinite;
+
+}
+.cup:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50%;
+    border: 5px solid white;
+    right: -65px;
+    top: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@keyframes animate {
+    0%
+    {
+        background-position: 500px 0px;
+    }
+    25%
+    {
+        background-position: 1000px 0px;
+    }
+    50%
+    {
+        background-position: 1500px 0px;
+    }
+    75%
+    {
+        background-position: 2000px 0px;
+    }
+    100%
+    {
+        background-position: 2500px 0px;
+    }
+}
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    margin: 25px;
+    background: rgb(186, 188, 174 );
+}
+.container .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: red;
+    background: rgb(186, 188, 174 );
+    overflow: hidden;
+    z-index: 2;
+}
+.container .box h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 700%;
+    color: rgba(246, 27, 9, 0.7);
+    transition: top 0.5s;
+}
+.container:hover .box h2{
+    top: 30%;
+}
+.container .box h3{
+    font-size: 300%;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.container .box p{
+    text-align: justify;
+}
+.container .box a{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    padding-top: 10px;
+    left: 30%;
+    transform: translateY(-70px);
+    color: green;
+    font-weight: 600;
+    font-size: 150%;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box a:hover{
+    color: blueviolet;
+    background: black;
+}
+.container:hover .box a{
+    transform: translateY(0);
+    opacity: 1;
+} 
+.container:before{
+    content: "";
+    position: absolute;
+    transform: skew(3deg,3deg);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: linear-gradient(to right bottom ,rgba(245, 49, 10  ,1),rgba(203, 245, 10 ,.8));
+    z-index: 1;
+}
+.container:nth-child(2):before{
+    background: linear-gradient(to right bottom ,rgba(78, 245, 10,1),rgba(199, 10, 245,.8));
+}
+.container:nth-child(3):before{
+    background: linear-gradient(to right bottom ,rgba(10, 224, 245,1),rgba(62, 42, 129,.8));
+}
+/* animate 2 */
+.sub-2{
+    position: relative;
+}
+.sub-2 ul{
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    display: flex;
+}
+.sub-2 ul li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    list-style: none;
+    margin-left: 15px;
+    animation: animate-1 1.6s linear infinite;
+}
+@keyframes animate-1{
+    0%
+    {
+        transform: translateY(0);
+    }
+    60%
+    {
+        transform: translateY(0);
+    }
+    80%
+    {
+        transform: translateY(-40px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+.sub-2 ul li:nth-child(1){
+    animation-delay: 0;
+}
+.sub-2 ul li:nth-child(2){
+    animation-delay: -1.4s;
+}
+.sub-2 ul li:nth-child(3){
+    animation-delay: -1s;
+}
+.sub-2 ul li:nth-child(4){
+    animation-delay: -.6s;
+}
+.sub-2 ul li:nth-child(5){
+    animation-delay: -0.2s;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 400px;
+}
+.card .front{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 128, 219, 1);
+    padding: 25px;
+    box-sizing: border-box;
+}
+.location{
+    font-weight: bold;
+    width: 50%;
+    float: left;
+    color: white;
+    text-align: left;
+}
+.more{
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-size: 24px;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+.weather{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.weather .fa.fa-cloud{
+    font-size: 80px;
+    color: white;
+}
+.weather h1{
+    font-size: 50px ;
+    color: white;
+    line-height: 40px;
+}
+.forecast{
+    margin: 0;
+    top: 0;
+}
+.forecast li{
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    color: white;
+    line-height: 15px;
+}
+.forecast li .day{
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+.forecast li .temprature{
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+.front .forecast li:nth-child(3){
+    border-bottom: none;
+}
+.back .forecast li:last-child{
+    border-bottom: none;
+}
+.forecast .fa.fa-chevron-left{
+    float: right;
+}
+.card .back{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background: rgba(255, 20, 56, 1);
+    transition: 0.9s;
+    /* transform: translateX(100%); */
+    opacity: 0;
+    z-index: -1;
+}
+.card .back.active-1{
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
+.go-back{
+    font-size: 14px;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+}
+/* animate 3 */
+.sub-3{
+    background-image: url(http://www.3develop.nl/blog/wp-content/uploads/2018/07/wereldkaart-blokken.jpg);
+    background-size: cover;
+    position: relative;
+}
+.sub.sub-3 ul{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-image: url(http://www.3develop.nl/blog/wp-content/uploads/2018/07/wereldkaart-blokken.jpg);
+    background-size: cover;
+    box-shadow: 0 0 30px white;
+    overflow: hidden;
+}
+.sub.sub-3 ul li:nth-child(1),
+.sub.sub-3 ul li:nth-child(2),
+.sub.sub-3 ul li:nth-child(3),
+.sub.sub-3 ul li:nth-child(4){
+    list-style: none;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: white;
+    top: 50%;
+}
+.sub.sub-3 ul li:nth-child(2){
+    transform: rotate(90deg);
+}
+.sub.sub-3 ul li:nth-child(3){
+    transform: rotate(45deg);
+}
+.sub.sub-3 ul li:nth-child(4){
+    transform: rotate(-45deg);
+}
+.sub.sub-3 ul li:nth-child(5),
+.sub.sub-3 ul li:nth-child(6),
+.sub.sub-3 ul li:nth-child(7){
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    border: 1px solid white;
+}
+.sub.sub-3 ul li:nth-child(5){
+    width: 50px;
+    height: 50px;
+}
+.sub.sub-3 ul li:nth-child(6){
+    width: 110px;
+    height: 110px;
+}
+.sub.sub-3 ul li:nth-child(7){
+    width: 170px;
+    height: 170px;
+}
+.sub.sub-3 ul li:nth-child(8){
+    list-style: none;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    /* transform-origin: top left; */
+    transform-origin: left top;
+    background: linear-gradient(45deg,#00ff00 0% ,transparent);
+    animation: animate-3 3s linear infinite;
+}
+@keyframes animate-3 {
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+/* anaimate 4 menu */
+.sub-4{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    cursor: pointer;
+    outline: none;
+}
+.open,
+.close{
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    outline: none;
+}
+.close{
+    display: none;
+}
+.close.active{
+    display: block;
+}
+.menu.active .open{
+    display: none;
+}
+.menu:before,
+.menu:after{
+    content: "";
+    position: absolute;
+    right: -90px;
+    width: 15px;
+    height: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.menu:before{
+    top: 10px;
+}
+.menu:after{
+   bottom: -20px;
+}
+.menu.active:before {
+    top: 14.5px;
+    transform: rotate(45deg);
+}
+.menu.active:after {
+    bottom: -15.5px;
+    transform: rotate(-45deg);
+}
+.menu-wapper{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    display: none;
+}
+.menu-wapper.active{
+    display: block;
+}
+.menu-wapper ul li{
+    color: white;
+    list-style: none;
+    margin: 15px;
+    cursor: pointer;
+    outline: none;
+}
+/* animate 5 */
+.sub-5{
+    position: relative;
+    padding-top: 50px;
+    padding-left: 100px;
+    animation: load-backgroud 8s linear infinite;
+}
+.load{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: burlywood;
+    box-shadow: 0 5px 10px white;
+}
+.load:after{
+    content: "";
+    top: 0;
+    position: absolute;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 15px burlywood;
+    animation: load 8s linear infinite;
+}
+@keyframes load{
+    0%
+    {
+        width: 0% ;
+        background-color: burlywood;
+        box-shadow: 0 0 15px burlywood;
+    }
+    20%
+    {
+        width: 20%;
+        background-color: red;
+        box-shadow: 0 0 15px red;
+    }
+    40%
+    {
+        width: 40% ;
+        background-color: rgb(231, 136, 10);
+        box-shadow: 0 0 15px rgb(231, 136, 10);
+    }
+    60%
+    {
+        width: 60% ;
+        background-color: rgb(11, 243, 100);
+        box-shadow: 0 0 15px rgb(11, 243, 100);
+    }
+    80%
+    {
+        width: 80% ;
+        background-color: rgb(65, 12, 211);
+        box-shadow: 0 0 15px rgb(65, 12, 211);
+    }
+    100%
+    {
+        width: 100% ;
+        background-color: rgb(231, 14, 166);
+        box-shadow: 0 0 15px rgb(231, 14, 166);
+    }
+}
+@keyframes load-backgroud{
+    0%
+    {
+        background-color: burlywood;
+    }
+    20%
+    {
+        background-color: red;
+    }
+    40%
+    {
+        background-color: rgb(231, 136, 10);
+    }
+    60%
+    {
+        background-color: rgb(11, 243, 100);
+    }
+    80%
+    {
+        background-color: rgb(65, 12, 211);
+    }
+    100%
+    {
+        background-color: rgb(231, 14, 166);
+    }
+}
+/* animate 6 */
